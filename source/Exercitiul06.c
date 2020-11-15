@@ -1,11 +1,12 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int numar;
 
-    printf("Introduceti un numar intreg: ");
-     //scanf-----
-     //printf-----
+    printf("\nIntroduceti un numar intreg: ");
+    scanf("%d", &numar);
+    printf("Ati introdus numarul: %d\n\n", numar);
 
     return 0;
 }

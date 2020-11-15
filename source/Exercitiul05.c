@@ -2,12 +2,12 @@
 
 int main()
 {
-     //----
-     //----
-     //----
+    int a = 34;
+    int b = 11;
+    double c = (double)a / (double)b;
 
-   printf("Numarul %d impartit la numarul %d este: %f\n", a, b, c);
-   return 0;
+    printf("\nNumarul %d impartit la numarul %d este: %f\n\n", a, b, c);
+    return 0;
 }
 
 /*
