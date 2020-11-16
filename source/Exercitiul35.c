@@ -3,26 +3,34 @@
 #include <stdio.h>
 int main()
 {
-  float a[2][2] = {{3.3,4.9},{6.2,7.4}};
-  float b[2][2]= {{8.2,9.7},{11.1,12.13}};
+  float a[2][2] = {{3.3, 4.9}, {6.2, 7.4}};
+  float b[2][2] = {{8.2, 9.7}, {11.1, 12.13}};
   float result[2][2];
 
   // adding corresponding elements of two arrays
-  for (int i = 0; i < 2; ++i) {
-    for (int j = 0; j < 2; ++j) {
+  for (int i = 0; i < 2; ++i)
+  {
+    for (int j = 0; j < 2; ++j)
+    {
       result[i][j] = a[i][j] + b[i][j];
     }
   }
   // Displaying the sum
   printf("\nMatricea rezultanta:\n");
 
-     //for-----
-     //for-----
-     //-----
-     //if-----
-     //-----
-     //-----
-     //-----
+  for (int i = 0; i < 2; ++i)
+  {
+    for (int j = 0; j < 2; ++j)
+    {
+      printf("%.1f\t", result[i][j]);
+
+      if (j == 1)
+      {
+        printf("\n");
+      }
+    }
+  }
+  printf("\n");
   return 0;
 }
 
