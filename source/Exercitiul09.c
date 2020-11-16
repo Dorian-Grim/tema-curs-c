@@ -9,19 +9,15 @@ int main()
 	printf("Introduceti numarul de randuri: ");
 	scanf("%d", &rows);
 
-	for (i = rows; i >= 1; i--)
+	for (i = 1; i <= rows; i++)
 	{
-		for (j = i; j <= rows; j++)
+		for (j = 1; j <= i; j++)
 		{
-			printf("%c", c);
-			if (j != i - 1)
-			{
-				printf(" ");
-			}
+			printf("* ");
 		}
-
 		printf("\n");
 	}
+
 	printf("\n");
 	return 0;
 }
