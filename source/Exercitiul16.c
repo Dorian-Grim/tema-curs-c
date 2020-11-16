@@ -2,18 +2,24 @@
 
 int main()
 {
-    int num;
+   int num;
 
-    printf("Introduceti un numar: \n");
-    scanf("%d", &num);
-     //if-----
-        printf("%d este pozitiv \n", num);
-     //else if-----
-        printf("%d este negativ \n", num);
-     //else-----
-        printf("0 e indecis");
-     //-----
-    return 0;
+   printf("\nIntroduceti un numar: \n");
+   scanf("%d", &num);
+   if (num > 0)
+   {
+      printf("%d este pozitiv \n", num);
+   }
+   else if (num < 0)
+   {
+      printf("%d este negativ \n", num);
+   }
+   else
+   {
+      printf("0 e indecis");
+   }
+   printf("\n\n");
+   return 0;
 }
 
 /*
