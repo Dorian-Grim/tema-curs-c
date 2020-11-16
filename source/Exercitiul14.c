@@ -6,16 +6,21 @@ int main()
     int tmp = 0;
     int cnt = 1;
     float avg;
-    printf ("Numarul -99 opreste secventa\n");
-    while (tmp != -99) {
-            printf("suma este: %i\n",sum);
-            printf("media este: %f\n",avg);
-            printf("Numarul nr. %i\n", cnt);
-     //scanf-----
-     //-----
-     //-----
-     //-----
+
+    printf("\nNumarul -99 opreste secventa\n");
+    while (tmp != -99)
+    {
+        printf("suma este: %i\n", sum);
+        printf("media este: %f\n", avg);
+        printf("Numarul nr. %i\n", cnt);
+        scanf("%d", &tmp);
+        cnt++;
+
+        sum += tmp;
+        avg = (float)sum / cnt;
     }
+    printf("\n");
+
     return 0;
 }
 
