@@ -1,16 +1,17 @@
 #include <stdio.h>
 
-int main() {
-   int a, b, tmp;
+int main()
+{
+  int a, b, tmp;
 
-   a = 11;
-   b = 9;
+  a = 11;
+  b = 9;
 
-   printf("Cele doua numere sunt: \n a = %d, b = %d \n\n", a, b);
+  printf("Cele doua numere sunt: \n a = %d, b = %d \n\n", a, b);
 
-     //----- doar operatori
+  tmp = (a + b) + (a - b);
 
-   printf("tmp este: \n tmp = %d \n", tmp);
+  printf("tmp este: \n tmp = %d \n", tmp);
 }
 
 /*
