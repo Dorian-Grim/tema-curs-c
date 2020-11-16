@@ -1,17 +1,23 @@
 #include <stdio.h>
 
-int main() {
-    int n, i;
-    printf("Introduceti un numar intreg <= 10: ");
-    scanf("%d", &n);
-     //if-----
-        printf("%d este mai mare decat 10\n", n);
-     //else-----
-        for (i = 1; i <= 10; ++i) {
-     //printf-----
-        }
+int main()
+{
+  int n, i;
+  printf("\nIntroduceti un numar intreg <= 10: ");
+  scanf("%d", &n);
+  if (n > 10)
+  {
+    printf("%d este mai mare decat 10\n", n);
+  }
+  else
+  {
+    for (i = 1; i <= 10; ++i)
+    {
+      printf("%d * %d = %d\n", n, i, n * i);
     }
-    return 0;
+  }
+  printf("\n");
+  return 0;
 }
 
 /*
