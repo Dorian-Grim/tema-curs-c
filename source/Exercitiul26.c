@@ -2,16 +2,18 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int n, rev = 0, rm;
-    printf("Introduceti un numar intreg cu mai multe cifre: ");
+    printf("\nIntroduceti un numar intreg cu mai multe cifre: ");
     scanf("%d", &n);
-    while (n != 0) {
-     //-----
-     //-----
-     //-----
+    while (n != 0)
+    {
+        rm = n % 10;
+        rev = rev * 10 + rm;
+        n /= 10;
     }
-    printf("Numarul inversat este: %d\n", rev);
+    printf("Numarul inversat este: %d\n\n", rev);
     return 0;
 }
 
