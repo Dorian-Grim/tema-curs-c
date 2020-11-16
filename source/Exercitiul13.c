@@ -13,11 +13,10 @@ int main()
 
 int putere(int m, int n)
 {
-  int i, tmp, p = 1;
+  int i, p = 1;
   for (i = 1; i <= n; i++)
   {
-    tmp = m;
-    p = p * tmp;
+    p = p * m;
   }
 
   return p;
