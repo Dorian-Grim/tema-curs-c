@@ -1,38 +1,41 @@
 /*rezolvarea ecuatiei de gradul 2 */
 
-#include <math.h>
 #include <stdio.h>
+#include <math.h>
 
-int main() {
+int main()
+{
     double a, b, c, discriminant, rad1, rad2, real, imag;
-    printf("Introduceti coeficientii a, b and c: ");
+    printf("\nIntroduceti coeficientii a, b and c: ");
     scanf("%lf %lf %lf", &a, &b, &c);
 
     discriminant = b * b - 4 * a * c;
 
     // conditie pentru radacini reale sau diferite
-    if (discriminant > 0) {
-     //-----
-     //-----
-     //----
+    if (discriminant > 0)
+    {
+        rad1 = (-b + sqrt(discriminant)) / (2 * a);
+        rad2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("\nrad1 = %.2f si rad2 = %.2f", rad1, rad2);
     }
 
     // conditie pentru radacini reale sau egale
-    else if (discriminant == 0) {
-     //-----
-     //-----
+    else if (discriminant == 0)
+    {
+        rad1 = rad2 = -b / (2 * a);
+        printf("\nrad1 = rad2 = %2f", rad1);
     }
 
     // daca radacinile nu sunt reale
-    else {
+    else
+    {
         real = -b / (2 * a);
         imag = sqrt(-discriminant) / (2 * a);
-        printf("rad1 = %.2lf+%.2lfi si rad2 = %.2f-%.2fi\n", real, imag, real, imag);
+        printf("\nrad1 = %.2lf+%.2lfi si rad2 = %.2f-%.2fi", real, imag, real, imag);
     }
-
+    printf("\n");
     return 0;
 }
-
 
 /*
 -----output------
