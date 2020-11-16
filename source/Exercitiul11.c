@@ -3,24 +3,24 @@
 int main()
 {
 
-	int number;
-	printf("Introduceti un numar:\n");
-	scanf("%d", &number);
+  int number;
+  printf("Introduceti un numar:\n");
+  scanf("%d", &number);
 
-	if (number < 100)
-	{
-		printf("Numarul e mai mic de 100!\n");
-	}
-	else if (number == 100)
-		printf("Numarul este 100!\n");
-	else
-	{
-		printf("Numarul este mai mare decat 100!\n");
-	}
+  if (number < 100)
+  {
+    printf("Numarul e mai mic de 100!\n");
+  }
+  else if (number == 100)
+    printf("Numarul este 100!\n");
+  else
+  {
+    printf("Numarul este mai mare decat 100!\n");
+  }
 
-	printf("\n");
+  printf("\n");
 
-	return 0;
+  return 0;
 }
 
 /*

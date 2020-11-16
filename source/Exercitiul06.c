@@ -2,13 +2,13 @@
 
 int main()
 {
-    int numar;
+  int numar;
 
-    printf("\nIntroduceti un numar intreg: ");
-    scanf("%d", &numar);
-    printf("Ati introdus numarul: %d\n\n", numar);
+  printf("\nIntroduceti un numar intreg: ");
+  scanf("%d", &numar);
+  printf("Ati introdus numarul: %d\n\n", numar);
 
-    return 0;
+  return 0;
 }
 
 /*

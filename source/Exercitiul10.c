@@ -2,25 +2,25 @@
 
 int main()
 {
-	int i, j, k, rows;
+  int i, j, k, rows;
 
-	printf("Introduceti numarul de randuri: ");
-	scanf("%d", &rows);
+  printf("Introduceti numarul de randuri: ");
+  scanf("%d", &rows);
 
-	for (i = 1; i <= rows; i++)
-	{
-		for (k = 1; k <= rows - i; k++)
-		{
-			printf("  ");
-		}
-		for (j = 1; j <= i; j++)
-		{
-			printf("* ");
-		}
-		printf("\n");
-	}
+  for (i = 1; i <= rows; i++)
+  {
+    for (k = 1; k <= rows - i; k++)
+    {
+      printf("  ");
+    }
+    for (j = 1; j <= i; j++)
+    {
+      printf("* ");
+    }
+    printf("\n");
+  }
 
-	return 0;
+  return 0;
 }
 
 /*

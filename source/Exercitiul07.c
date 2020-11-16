@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int numar;
-    int a = 2231;
+  int numar;
+  int a = 2231;
 
-    printf("\nIntroduceti un numar intreg: ");
-    scanf("%d", &numar);
-    printf("Ati introdus: %d, suma dintre %d si %d este %d\n\n", numar, numar, a, numar + a);
+  printf("\nIntroduceti un numar intreg: ");
+  scanf("%d", &numar);
+  printf("Ati introdus: %d, suma dintre %d si %d este %d\n\n", numar, numar, a, numar + a);
 
-    return 0;
+  return 0;
 }
 
 /*

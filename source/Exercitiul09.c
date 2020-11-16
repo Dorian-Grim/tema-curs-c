@@ -2,24 +2,24 @@
 
 int main()
 {
-	int i, j, rows;
-	const char c = '*';
+  int i, j, rows;
+  const char c = '*';
 
-	printf("\n");
-	printf("Introduceti numarul de randuri: ");
-	scanf("%d", &rows);
+  printf("\n");
+  printf("Introduceti numarul de randuri: ");
+  scanf("%d", &rows);
 
-	for (i = 1; i <= rows; i++)
-	{
-		for (j = 1; j <= i; j++)
-		{
-			printf("* ");
-		}
-		printf("\n");
-	}
+  for (i = 1; i <= rows; i++)
+  {
+    for (j = 1; j <= i; j++)
+    {
+      printf("* ");
+    }
+    printf("\n");
+  }
 
-	printf("\n");
-	return 0;
+  printf("\n");
+  return 0;
 }
 
 /*

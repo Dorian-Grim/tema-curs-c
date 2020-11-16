@@ -2,14 +2,14 @@
 
 int main()
 {
-	int a = 10;
-	int b = 20;
-	char c = 'F';
-	double d = 23.433500;
+  int a = 10;
+  int b = 20;
+  char c = 'F';
+  double d = 23.433500;
 
-	printf("\nAti declarat variabilele: a=%d, b=%d, c=%c, d=%f\n\n", a, b, c, d);
+  printf("\nAti declarat variabilele: a=%d, b=%d, c=%c, d=%f\n\n", a, b, c, d);
 
-	return 0;
+  return 0;
 }
 
 /*

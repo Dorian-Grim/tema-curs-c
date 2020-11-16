@@ -2,9 +2,9 @@
 
 int main()
 {
-	printf("\nLume, lume, soro lume\n\n");
+  printf("\nLume, lume, soro lume\n\n");
 
-	return 0;
+  return 0;
 }
 
 /*

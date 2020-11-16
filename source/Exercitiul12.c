@@ -1,18 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
 
-    int i = 0;
-    printf("\nAfisam numerele de la 0 la 9\n\n");
+  int i = 0;
+  printf("\nAfisam numerele de la 0 la 9\n\n");
 
-     //while-----
-     //-----
-        i++;
-     //-----
-    return 0;
+  while (i <= 9)
+  {
+    printf("%d\n", i);
+    i++;
+  }
+  printf("\n");
+  return 0;
 }
-
 
 /*
 -----output------
