@@ -2,30 +2,37 @@
 
 #include <stdio.h>
 
-int main() {
-    int n, i, flag = 0;
-    printf("Introduceti un numar intreg pozitiv: ");
-    scanf("%d", &n);
+int main()
+{
+  int n, i, flag = 0;
+  printf("\nIntroduceti un numar intreg pozitiv: ");
+  scanf("%d", &n);
 
-    for (i = 2; i <= n / 2; ++i) {
-
-     //if-----
-     //-----
-     //-----
-     //-----
+  for (i = 2; i <= n / 2; ++i)
+  {
+    if (n % i == 0)
+    {
+      flag = 1;
+      break;
     }
-
-     //if-----
-        printf("1 nu intra in discutie\n");
-     //else-----
-     //if-----
-            printf("%d este un numar prim\n", n);
-     //else-----
-            printf("%d nu este un numar prim\n", n);
-     //-----
-     //-----
-
-    return 0;
+  }
+  if (n == 1)
+  {
+    printf("1 nu intra in discutie\n");
+  }
+  else
+  {
+    if (flag == 0)
+    {
+      printf("%d este un numar prim\n", n);
+    }
+    else
+    {
+      printf("%d nu este un numar prim\n", n);
+    }
+  }
+  printf("\n");
+  return 0;
 }
 
 /*
