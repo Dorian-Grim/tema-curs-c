@@ -2,19 +2,20 @@
 
 /* Schimba valorile celor doua variabile intre ele */
 
-int main() {
-   int a, b, temp;
+int main()
+{
+  int a, b, temp;
 
-   a = 11;
-   b = 99;
+  a = 11;
+  b = 99;
 
-   printf("Inainte de schimb: \n a = %d, b = %d \n\n", a, b);
+  printf("\nInainte de schimb: \n a = %d, b = %d \n\n", a, b);
 
-     //-----
-     //-----
-     //-----
+  temp = a;
+  a = b;
+  b = temp;
 
-   printf("Dupa schimb: \n a = %d, b = %d \n", a, b);
+  printf("Dupa schimb: \n a = %d, b = %d \n\n", a, b);
 }
 
 /*
