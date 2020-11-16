@@ -1,22 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-   int num1,num2,num3;
+  int num1, num2, num3;
 
+  printf("\nIntroduceti trei numere diferite, separate de spatii:");
 
-   printf("\nIntroduceti trei numere diferite, separate de spatii:");
+  scanf("%d %d %d", &num1, &num2, &num3);
 
-   scanf("%d %d %d",&num1,&num2,&num3);
+  if (num1 > num2 && num1 > num3)
+  {
+    printf("\n Primul este cel mai mare");
+  }
 
-     //if-----
-      printf("\n Primul este cel mai mare");
-     //else if-----
-      printf("\n Al doilea este cel mai mare");
-     //else-----
-      printf("\n Al treilea este cel mai mare");
-     //-----
+  else if (num2 > num1 && num2 > num3)
+  {
+    printf("\n Al doilea este cel mai mare");
+  }
 
-   return 0;
+  else
+  {
+    printf("\n Al treilea este cel mai mare");
+  }
+
+  printf("\n\n");
+  return 0;
 }
 
 /*
