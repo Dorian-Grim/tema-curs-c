@@ -1,21 +1,26 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main()
 {
 
-    int number;
-    printf("Introduceti un numar:\n");
-    scanf("%d",&number);
+	int number;
+	printf("Introduceti un numar:\n");
+	scanf("%d", &number);
 
-     //if-----
-            printf("Numarul e mai mic de 100!\n");
-     //else if-----
-            printf("Numarul este 100!\n");
-     //else-----
-            printf("Numarul este mai mare decat 100!\n");
-     //-----
+	if (number < 100)
+	{
+		printf("Numarul e mai mic de 100!\n");
+	}
+	else if (number == 100)
+		printf("Numarul este 100!\n");
+	else
+	{
+		printf("Numarul este mai mare decat 100!\n");
+	}
 
-    return 0;
+	printf("\n");
+
+	return 0;
 }
 
 /*
