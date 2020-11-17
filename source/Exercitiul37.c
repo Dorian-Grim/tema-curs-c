@@ -2,44 +2,53 @@
 
 int main()
 {
-    int arr1[101], fr1[101];
-    int n, i, j, ctr;
+  int arr1[101], fr1[101];
+  int n, i, j, ctr;
 
-    printf("\n\nAfiseaza frecventa numerelor din matrice:\n");
-    printf("------------------------------------------------\n");
+  printf("\n\nAfiseaza frecventa numerelor din matrice:\n");
+  printf("------------------------------------------------\n");
 
-    printf("Introduceti numarul de elemente din matrice (nu mai mare de 100):");
-    scanf("%d",&n);
+  printf("Introduceti numarul de elemente din matrice (nu mai mare de 100):");
+  scanf("%d", &n);
 
-    for(i=0;i<n;i++) {
-      printf("element - %d : ",i);
-      scanf("%d",&arr1[i]);
-      fr1[i] = -1;
-    }
+  for (i = 0; i < n; i++)
+  {
+    printf("element - %d : ", i);
+    scanf("%d", &arr1[i]);
+    fr1[i] = -1;
+  }
 
-     //for-----
-     //-----
-     //for-----
-     //if-----
-     //-----
-     //-----
-     //-----
-     //-----
-
-     //if-----
-     //-----
-     //-----
-    }
-
-    printf("\nFrecventa numerelor din matrice: \n");
-    for(i=0; i<n; i++) {
-        if(fr1[i]!=0) {
-            printf("%d apare de %d ori\n", arr1[i], fr1[i]);
+  for (i = 0; i < n; i++)
+  {
+    ctr = 1;
+    for (j = i + 1; j < n; j++)
+    {
+      if (arr1[i] == arr1[j])
+      {
+        ctr++;
+        {
+          fr1[j] = 0;
         }
+      }
     }
-    return 0;
-}
+    if (fr1[i] != 0)
+    {
+      fr1[i] = ctr;
+    }
+  }
 
+  printf("\nFrecventa numerelor din matrice: \n");
+  for (i = 0; i < n; i++)
+  {
+    if (fr1[i] != 0)
+    {
+      printf("%d apare de %d ori\n", arr1[i], fr1[i]);
+    }
+  }
+
+  printf("\n");
+  return 0;
+}
 
 /*
 -----output------
