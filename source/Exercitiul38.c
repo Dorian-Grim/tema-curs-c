@@ -2,44 +2,57 @@
 
 #include <stdio.h>
 
-int main()  {
-  int arr1[50][50],brr1[50][50],i,j,r,c;
+int main()
+{
+  int arr1[50][50], brr1[50][50], i, j, r, c;
 
-   printf("\n\nTranspusa unei matrici :\n");
-   printf("---------------------------\n");
+  printf("\n\nTranspusa unei matrici :\n");
+  printf("---------------------------\n");
 
-   printf("\nIntroduceti numarul de randuri si coloane ale matricii (doua numere intregi): ");
-   scanf("%d %d",&r,&c);
+  printf("\nIntroduceti numarul de randuri si coloane ale matricii (doua numere intregi): ");
+  scanf("%d %d", &r, &c);
 
-   for(i=0;i<r;i++) {
-        for(j=0;j<c;j++) {
-           printf("element - [%d],[%d] : ",i,j);
-           scanf("%d",&arr1[i][j]);
-        }
+  for (i = 0; i < r; i++)
+  {
+    for (j = 0; j < c; j++)
+    {
+      printf("element - [%d],[%d] : ", i, j);
+      scanf("%d", &arr1[i][j]);
     }
+  }
 
-     //for-----
-     //for-----
-     //-----
-     //-----
-     //-----
+  for (i = 0; i < r; ++i)
+  {
+    for (j = 0; j < c; ++j)
+    {
+      brr1[j][i] = arr1[i][j];
+    }
+  }
 
-    printf("\nMatricea este :\n");
-     //for-----
-     //-----
-     //for-----
-     //-----
-     //-----
-     //-----
+  printf("\nMatricea este :\n");
+  for (i = 0; i < r; ++i)
+  {
+    for (j = 0; j < c; ++j)
+    {
+      printf("%d\t", arr1[i][j]);
+      if (j == c - 1)
+        printf("\n");
+    }
+  }
 
-    printf("\n\nTranspusa este: ");
-     //for-----
-     //-----
-     //for-----
-     //-----
-     //-----
-     //-----
-    return 0;
+  printf("\n\nTranspusa este: \n");
+  for (i = 0; i < c; ++i)
+  {
+    for (j = 0; j < r; ++j)
+    {
+      printf("%d\t", brr1[i][j]);
+      if (j == r - 1)
+        printf("\n");
+    }
+  }
+
+  printf("\n");
+  return 0;
 }
 
 /*
