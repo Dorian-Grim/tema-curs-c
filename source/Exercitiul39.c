@@ -2,43 +2,51 @@
 
 #include <stdio.h>
 
-int main() {
-     int i,j,arr1[50][50],sum=0,n,m=0;
+int main()
+{
+  int i, j, arr1[50][50], sum = 0, n, m = 0;
 
-     printf("\n\nSuma elementelor de pe diagonala dreapta a unei matrici :\n");
-     printf("---------------------------------------\n");
+  printf("\n\nSuma elementelor de pe diagonala dreapta a unei matrici :\n");
+  printf("---------------------------------------\n");
 
-     printf("Introduceti dimensiunea matricii patrate (un nr. intreg) : ");
-     scanf("%d", &n);
-     m=n;
-     printf("Introduceti elementele matricii:\n");
-     for(i=0;i<n;i++) {
-         for(j=0;j<n;j++) {
-             printf("elementul - [%d],[%d] : ",i,j);
-             scanf("%d",&arr1[i][j]);
-         }
-     }
-
-     printf("Matricea este :\n");
-     //for-----
-     //for-----
-     //-----
-     //-----
-     //-----
-     //-----
-
-     //for-----
-     //-----
-     //for-----
-     //if-----
-     //-----
-     //-----
-     //-----
-     //-----
-    printf("Suma elementelor de pe diagonala dreapta :%d\n",sum);
-    return 0;
+  printf("Introduceti dimensiunea matricii patrate (un nr. intreg) : ");
+  scanf("%d", &n);
+  m = n;
+  printf("Introduceti elementele matricii:\n");
+  for (i = 0; i < n; i++)
+  {
+    for (j = 0; j < n; j++)
+    {
+      printf("elementul - [%d],[%d] : ", i, j);
+      scanf("%d", &arr1[i][j]);
+    }
   }
 
+  printf("Matricea este :\n");
+  for (i = 0; i < m; i++)
+  {
+    for (j = 0; j < n; j++)
+    {
+      printf(" %3d", arr1[i][j]);
+    }
+    printf("\n");
+  }
+
+  for (i = 0; i < m; i++)
+  {
+    for (j = 0; j < n; j++)
+    {
+      if (i == j)
+      {
+        sum += arr1[i][j];
+      }
+    }
+  }
+
+  printf("Suma elementelor de pe diagonala dreapta :%d\n", sum);
+  printf("\n");
+  return 0;
+}
 
 /*
 -----output------
