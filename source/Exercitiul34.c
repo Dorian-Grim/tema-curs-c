@@ -2,7 +2,8 @@
 
 #include <stdio.h>
 
-int main () {
+int main()
+{
   int n;
   int i;
   int v[50];
@@ -13,22 +14,30 @@ int main () {
 
   scanf("%d", &n);
 
-  for (i = 1; i <= n; i++) {
-      v[i] = 2 * i;
+  for (i = 1; i <= n; i++)
+  {
+    v[i] = 2 * i;
   }
 
-  for (i = 1; i <= n; i++) {
+  for (i = 1; i <= n; i++)
+  {
 
-     //-----
-     //-----
-     //-----
-     //-----
-     //-----
-     //-----
-
-      printf("\n");
+    k = n;
+    for (j = 1; j <= k - i; j++)
+    {
+      printf(" ");
     }
-    return 0;
+
+    for (j = 1; j <= v[i]; j++)
+    {
+      printf("*");
+    }
+
+    printf("\n");
+  }
+
+  printf("\n");
+  return 0;
 }
 
 /*
@@ -44,5 +53,3 @@ Da-mi nr. de randuri
 
 -------------------
 */
-
-
