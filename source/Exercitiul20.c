@@ -9,7 +9,7 @@ int main()
 
   printf("Cele doua numere sunt: \n a = %d, b = %d \n\n", a, b);
 
-  tmp = (a + b) + (a - b);
+  tmp = ++a + ++b;
 
   printf("tmp este: \n tmp = %d \n", tmp);
 }
