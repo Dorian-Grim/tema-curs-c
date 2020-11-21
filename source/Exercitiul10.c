@@ -4,7 +4,7 @@ int main()
 {
   int i, j, k, rows;
 
-  printf("Introduceti numarul de randuri: ");
+  printf("\nIntroduceti numarul de randuri: ");
   scanf("%d", &rows);
 
   for (i = 1; i <= rows; i++)
@@ -20,6 +20,7 @@ int main()
     printf("\n");
   }
 
+  printf("\n");
   return 0;
 }
 
