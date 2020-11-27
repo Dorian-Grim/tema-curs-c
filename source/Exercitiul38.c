@@ -32,22 +32,20 @@ int main()
   printf("\nMatricea este :\n");
   for (i = 0; i < r; ++i)
   {
+    printf("\n");
     for (j = 0; j < c; ++j)
     {
       printf("%d\t", arr1[i][j]);
-      if (j == c - 1)
-        printf("\n");
     }
   }
 
   printf("\n\nTranspusa este: \n");
   for (i = 0; i < c; ++i)
   {
+    printf("\n");
     for (j = 0; j < r; ++j)
     {
       printf("%d\t", brr1[i][j]);
-      if (j == r - 1)
-        printf("\n");
     }
   }
 
